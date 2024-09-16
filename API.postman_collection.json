@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "7068fb8b-dae4-415b-a97e-3eeb0f675e7c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38344779"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/api/rep_performance?rep_id=158",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/box_plot",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"box_plot"
+					],
+					"query": [
+						{
+							"key": "employee_id",
+							"value": "158",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/team_performance?total_revenue_confirmed=ali",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/team_performance?total_revenue_confirmed=ali",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"team_performance"
+					],
+					"query": [
+						{
+							"key": "total_revenue_confirmed",
+							"value": "ali"
+						}
+					]
+				},
+				"description": "Team performance by Total Revenue generatd "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/team_performance?employee_name=Maaz Brown",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/team_performance?employee_id=200",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"team_performance"
+					],
+					"query": [
+						{
+							"key": "employee_id",
+							"value": "200"
+						}
+					]
+				},
+				"description": "Too large data "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/team_performance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/team_performance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"team_performance"
+					]
+				},
+				"description": "Request Details:\r\nMethod: GET\r\nURL: http://localhost:5000/api/team_performance\r\nOverall performace: All attribute "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "monthly"
+						}
+					]
+				},
+				"description": "Invalid value : monthly \r\n429 status : shown \r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "monthly"
+						}
+					]
+				},
+				"description": "Trends:Monthly,\r\nspecific date (September 30th, 2024)"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=april",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=april",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "april"
+						}
+					]
+				},
+				"description": "Bad_Request\r\n \"error\": \"Invalid time_period parameter. Use \\\"monthly\\\" or \\\"quarterly\\\".\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=quarterly\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "quarterly\n"
+						}
+					]
+				},
+				"description": " GET \r\nEnter URL as http://127.0.0.1:5000/api/performance_trends.\r\nAdd Query Parameter:\r\ntime_period as either monthly or quarterly.\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "monthly"
+						}
+					]
+				},
+				"description": "Monthly treands:\r\n \"2022-07\": 81607,\r\n        \"2022-08\": 249043,\r\n        \"2022-09\": 68347,\r\n        \"2022-10\": 215156,\r\n        \"2022-11\": 192523,\r\n        \"2022-12\": 199118,\r\n        \"2023-01\": 277675,\r\n        \"2023-02\": 157090,\r\n        \"2023-03\": 376916,\r\n        \"2023-04\": 241729,\r\n        \"2023-05\": 72487"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=quarterly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=monthly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "monthly"
+						}
+					]
+				},
+				"description": "Quartely_wise: trends"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/performance_trends?time_period=quarterly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/performance_trends?time_period=quarterly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"performance_trends"
+					],
+					"query": [
+						{
+							"key": "time_period",
+							"value": "quarterly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/line_plot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/line_plot",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"line_plot"
+					]
+				},
+				"description": "Line plot"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/histogram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/histogram",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"histogram"
+					]
+				},
+				"description": "histogram"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/interactive_plot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/interactive_plot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"interactive_plot"
+					]
+				},
+				"description": "interactive_plot"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/rep_performance?rep_id=200&employee_name=Camilla Ali",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/rep_performance?rep_id=200&employee_name=Camilla Ali",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rep_performance"
+					],
+					"query": [
+						{
+							"key": "rep_id",
+							"value": "200"
+						},
+						{
+							"key": "employee_name",
+							"value": "Camilla Ali"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/rep_performance?rep_id=200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/rep_performance?rep_id=200",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rep_performance"
+					],
+					"query": [
+						{
+							"key": "rep_id",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/rep_performance?rep_id=194",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/rep_performance?rep_id=194",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rep_performance"
+					],
+					"query": [
+						{
+							"key": "rep_id",
+							"value": "194"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
